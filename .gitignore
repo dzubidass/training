@@ -1,0 +1,65 @@
+# gitignore template for Drupal 9 projects
+# earlier versions of Drupal are tracked in `community/PHP/`
+/docroot/themes/contrib
+/docroot/modules/contrib
+/docroot/profiles/contrib
+/docroot/libraries
+
+# Ignore configuration files that may contain sensitive information
+/docroot/sites/*/*settings*.php
+/docroot/sites/*/*services*.yml
+!/docroot/sites/default/settings.php
+
+# Ignore paths that may contain user-generated content
+/docroot/sites/*/files
+/docroot/sites/*/public
+/docroot/sites/*/private
+/docroot/sites/*/files-public
+/docroot/sites/*/files-private
+
+# Ignore paths that may contain temporary files
+/docroot/sites/*/translations
+/docroot/sites/*/tmp
+/docroot/sites/*/cache
+
+# Resi composer install
+/vendor
+/docroot/core
+
+# Ignore IDE and lando files
+/.idea/
+/.vscode/
+*.iml
+*.code-workspace
+.lando.yml
+adminer.php
+/*.sql.gz
+
+# Ignore all log files
+*.log
+
+# Ignore node modules
+node_modules
+
+# Ignore some css related stuff
+*.css.map
+*.css.map.map
+
+# Ignore default text and exmple files
+docroot/sites/*example*
+docroot/CHANGELOG.txt
+docroot/COPYRIGHT.txt
+docroot/INSTALL*.txt
+docroot/LICENSE.txt
+docroot/MAINTAINERS.txt
+docroot/UPGRADE.txt
+docroot/README.txt
+docroot/sites/README.txt
+docroot/sites/all/modules/README.txt
+docroot/sites/all/themes/README.txt
+
+# Default files
+!/docroot/sites/default/files/
+/docroot/sites/default/files/*/*
+/docroot/sites/default/files/*
+docroot/sites/default/binary_www_old/*/*

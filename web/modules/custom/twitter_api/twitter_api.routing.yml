@@ -1,0 +1,13 @@
+twitter_api.get_tweets:
+  path: '/api/tweets'
+  defaults:
+    _controller: '\Drupal\twitter_api\Controller\TwitterApiController::getTweets'
+    _title: 'Retrieve tweets'
+  methods: [GET]
+
+twitter_api.post_tweet:
+  path: '/api/tweet'
+  defaults:
+    _controller: '\Drupal\twitter_api\Controller\TwitterApiController::postTweet'
+    _title: 'Post tweet'
+  methods: [POST]
