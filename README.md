@@ -1,4 +1,6 @@
 # training
 Testing lando, drush , drupal, configuration 
 
-Fckit!!
+Fckit!! and Fckyou!
+
+Fckit again!!
