@@ -63,3 +63,33 @@ docroot/sites/all/themes/README.txt
 /docroot/sites/default/files/*/*
 /docroot/sites/default/files/*
 docroot/sites/default/binary_www_old/*/*
+
+# Ignore vendor dependencies and scripts
+/vendor
+/composer.phar
+/composer
+/robo.phar
+/robo
+/drush.phar
+/drush
+/drupal.phar
+/drupal
+
+### VisualStudioCode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/*.code-snippets
+
+# Local History for Visual Studio Code
+.history/
+
+# Built Visual Studio Code Extensions
+*.vsix
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history
+.ionide
