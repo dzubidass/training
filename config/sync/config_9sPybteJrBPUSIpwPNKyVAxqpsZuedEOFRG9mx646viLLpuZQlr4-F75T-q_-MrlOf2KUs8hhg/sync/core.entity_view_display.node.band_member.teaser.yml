@@ -1,0 +1,34 @@
+uuid: bf331244-1226-4745-9934-e74449862d2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.band_member.body
+    - field.field.node.band_member.field_instrument
+    - field.field.node.band_member.field_photo
+    - node.type.band_member
+  module:
+    - text
+    - user
+id: node.band_member.teaser
+targetEntityType: node
+bundle: band_member
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_instrument: true
+  field_photo: true

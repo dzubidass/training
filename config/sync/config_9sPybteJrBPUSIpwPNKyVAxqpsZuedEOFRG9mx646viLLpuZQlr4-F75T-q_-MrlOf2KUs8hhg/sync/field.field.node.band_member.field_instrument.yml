@@ -1,0 +1,21 @@
+uuid: ac6789cd-c17d-46f5-a0af-f32442489cd0
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_instrument
+    - node.type.band_member
+  module:
+    - options
+id: node.band_member.field_instrument
+field_name: field_instrument
+entity_type: node
+bundle: band_member
+label: Instrument
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
