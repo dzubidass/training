@@ -1,0 +1,10 @@
+uuid: 780aea05-4fa7-4f11-8b6c-d4acfd5f3b93
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.flex
+label: Flex
+targetEntityType: node
+cache: true

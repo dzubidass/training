@@ -1,0 +1,46 @@
+uuid: 65f3982d-427f-4ee1-a3a3-865aa28f6df4
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.flex
+    - field.field.node.article.body
+    - field.field.node.article.comment
+    - field.field.node.article.field_categrory
+    - field.field.node.article.field_image
+    - image.style.thumbnail
+    - node.type.article
+  module:
+    - image
+    - text
+    - user
+_core:
+  default_config_hash: 7fb0j9HnIXfP9ndewzgPPzzeX_SV532wuYpkscrCMCk
+id: node.article.flex
+targetEntityType: node
+bundle: article
+mode: flex
+content:
+  body:
+    type: text_trimmed
+    label: hidden
+    settings:
+      trim_length: 100
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: thumbnail
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  comment: true
+  field_categrory: true
+  links: true
