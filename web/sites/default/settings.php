@@ -779,3 +779,20 @@ $settings['config_sync_directory'] = 'sites/default/files/config_9sPybteJrBPUSIp
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+
+$settings['config_sync_directory'] = '../config/sync';
+
+
+$env = 'prod';
+switch ($env) {
+  case 'prod':
+  $config['config_split.config_split.dev']['status'] = FALSE;
+  $config['config_split.config_split.prod']['status'] = TRUE;
+  break;
+
+  case 'dev':
+  default:
+  $config['config_split.config_split.dev']['status'] = TRUE;
+  $config['config_split.config_split.prod']['status'] = FALSE;
+  break;
+}
