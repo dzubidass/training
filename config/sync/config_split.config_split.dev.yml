@@ -9,6 +9,8 @@ weight: 0
 folder: ../config/dev
 module:
   dblog: 0
+  devel_generate: 0
+  twig_tweak: 0
   views_ui: 0
 theme: {  }
 blacklist: {  }
